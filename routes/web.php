@@ -38,17 +38,17 @@ Route::middleware(['auth'])->group(function () {
 
 
 
-    //car
-    Route::get('/admin/car','CarController@index')->name('car.index');
-    Route::get('/admin/car/create','CarController@create')->name('car.create');
-    Route::get('/admin/car/source','CarController@source')->name('car.source');
-    Route::get('/admin/car/{id}/edit','CarController@edit')->name('car.edit');
-    Route::get('/admin/car/{id}/show','CarController@show')->name('car.show');
-    Route::get('/admin/car/{id}/destroy','CarController@destroy')->name('car.destroy');
-    Route::post('/admin/car/store','CarController@store')->name('car.store');
-    Route::post('/admin/car/{id}/update','CarController@update')->name('car.update');
-    Route::get('/admin/car/{id}/getImage','CarController@getImage')->name('car.getImage');
-    Route::get('/admin/car/{id}/destroyImage','CarController@destroyImage')->name('car.destroyImage');
+    //tool
+    Route::get('/admin/tool','CarController@index')->name('car.index');
+    Route::get('/admin/tool/create','CarController@create')->name('car.create');
+    Route::get('/admin/tool/source','CarController@source')->name('car.source');
+    Route::get('/admin/tool/{id}/edit','CarController@edit')->name('car.edit');
+    Route::get('/admin/tool/{id}/show','CarController@show')->name('car.show');
+    Route::get('/admin/tool/{id}/destroy','CarController@destroy')->name('car.destroy');
+    Route::post('/admin/tool/store','CarController@store')->name('car.store');
+    Route::post('/admin/tool/{id}/update','CarController@update')->name('car.update');
+    Route::get('/admin/tool/{id}/getImage','CarController@getImage')->name('car.getImage');
+    Route::get('/admin/tool/{id}/destroyImage','CarController@destroyImage')->name('car.destroyImage');
 
     //customer
     Route::get('/admin/customer','CustomerController@index')->name('customer.index');
