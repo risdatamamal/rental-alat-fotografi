@@ -1,4 +1,4 @@
-## Rental Alat Fotografi
+## Sistem Informasi Rental Alat Fotografi (SIRAF)
 
 ![](screenshoot/login.png)
 
