@@ -37,18 +37,6 @@
             </div>
         </div>
     </li>
-    {{-- <li class="nav-item {{active('car.index')}}">
-        <a class="nav-link" href="{{route('car.index')}}">
-            <i class="fas fa-fw fa-car"></i>
-            <span>Mobil</span>
-        </a>
-    </li>
-    <li class="nav-item {{active('manufacture.index')}}">
-        <a class="nav-link" href="{{route('manufacture.index')}}">
-            <i class="fas fa-fw fa-car"></i>
-            <span>Merk</span>
-        </a>
-    </li> --}}
     <li class="nav-item {{active('customer.index')}}">
         <a class="nav-link" href="{{route('customer.index')}}">
             <i class="fas fa-fw fa-user"></i>
@@ -68,24 +56,6 @@
             </div>
         </div>
     </li>
-    {{-- <li class="nav-item {{active('transaction.create')}}">
-        <a class="nav-link" href="{{route('transaction.create')}}">
-            <i class="fas fa-fw fa-book"></i>
-            <span>Transaksi</span>
-        </a>
-    </li>
-    <li class="nav-item {{active('transaction.index')}}">
-        <a class="nav-link" href="{{route('transaction.index')}}">
-            <i class="fas fa-fw fa-book"></i>
-            <span>List Transaksi</span>
-        </a>
-    </li>
-    <li class="nav-item {{active('transaction.history')}}">
-        <a class="nav-link" href="{{route('transaction.history')}}">
-            <i class="fas fa-fw fa-book"></i>
-            <span>Riwayat Transaksi</span>
-        </a>
-    </li> --}}
     <li class="nav-item {{active('setting.index')}}">
         <a class="nav-link" href="{{route('setting.index')}}">
             <i class="fas fa-fw fa-cog"></i>
@@ -100,7 +70,9 @@
         <div id="user" class="collapse {{is_active('user.index') || is_active('role.index')  ? 'show':''}}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
             <a class="collapse-item {{active('user.index')}}" href="{{route('user.index')}}">Pengguna</a>
-            <a class="collapse-item {{active('role.index')}}" href="{{route('role.index')}}">Hak Akses</a>
+            @if (Auth::user()->role_id == 1)
+                <a class="collapse-item {{active('role.index')}}" href="{{route('role.index')}}">Hak Akses</a>
+            @endif
             </div>
         </div>
     </li>

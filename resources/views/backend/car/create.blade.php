@@ -38,8 +38,8 @@
                 <div class="row">
                     <div class="col">
                         <div class="form-group">
-                          <label>Nomer Polisi</label>
-                          <input type="text" name="license_number" id="" class="form-control border-dark-50" required="">
+                          <label>Deskripsi</label>
+                          <input type="text" name="desc" id="" class="form-control border-dark-50" required="">
                         </div>
                     </div>
                     <div class="col">

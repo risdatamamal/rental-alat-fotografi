@@ -1,5 +1,7 @@
 @extends('backend.layouts')
+
 @section('title','Alat')
+
 @section('content')
 <div class="col-lg-12">
     <div class="card mb-4">
@@ -13,7 +15,7 @@
                         <th>#</th>
                         <th>Nama</th>
                         <th>Merk</th>
-                        <th>Tahun</th>
+                        <th>Deskripsi</th>
                         <th>Harga Sewa</th>
                         <th>Status</th>
                         <th>Action</th>
@@ -52,7 +54,7 @@ $(document).ready(function () {
             // {data: 'code', name: 'code',width:"5%", orderable : false},
             {data: 'name', name: 'name',width:"5%", orderable : false},
             {data: 'manufacture', name: 'manufacture',width:"5%", orderable : false},
-            {data: 'year', name: 'year',width:"5%", orderable : false},
+            {data: 'desc', name: 'desc',width:"5%", orderable : false},
             {data: 'price', name: 'price',width:"5%", orderable : false},
             {data: 'status', name: 'status',width:"5%", orderable : true},
             {data: 'action', name: 'action',width:"5%", orderable : false}
@@ -108,7 +110,7 @@ $(document).ready(function () {
         var name = button.data('name'); // Extract info from data-* attributes
         var year = button.data('year'); // Extract info from data-* attributes
         var color = button.data('color'); // Extract info from data-* attributes
-        var license_number = button.data('license_number'); // Extract info from data-* attributes
+        var desc = button.data('desc'); // Extract info from data-* attributes
         var price = button.data('price'); // Extract info from data-* attributes
         var penalty = button.data('penalty'); // Extract info from data-* attributes
 
@@ -139,7 +141,7 @@ $(document).ready(function () {
 
         modal.find('input[name="name"]').val(name);
         modal.find('input[name="year"]').val(year);
-        modal.find('input[name="license_number"]').val(license_number);
+        modal.find('input[name="desc"]').val(desc);
         modal.find('input[name="color"]').val(color);
         modal.find('input[name="price"]').val(price);
         modal.find('input[name="penalty"]').val(penalty);

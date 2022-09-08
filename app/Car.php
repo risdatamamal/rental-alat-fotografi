@@ -13,7 +13,7 @@ class Car extends Model
 
     protected $table = 'cars';
     protected $dates = ['deleted_at'];
-    protected $fillable = ['name', 'manufacture_id', 'license_number', 'color', 'year', 'status', 'price', 'penalty'];
+    protected $fillable = ['name', 'manufacture_id', 'desc', 'color', 'year', 'status', 'price', 'penalty'];
     public $incrementing = false;
 
     public function manufacture()

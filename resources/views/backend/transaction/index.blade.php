@@ -15,7 +15,7 @@
                         <th>Date Sewa</th>
                         <th>Date Kembali</th>
                         <th>Customer</th>
-                        <th>Mobil</th>
+                        <th>Alat</th>
                         <th>Status</th>
                         <th>Action</th>
                     </tr>
