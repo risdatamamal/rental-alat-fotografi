@@ -1172,4 +1172,4 @@ INSERT INTO `users` (`id`, `role_id`, `name`, `username`, `email`, `email_verifi
 ('2',	'1',	'Owner',	'owner',	'owner@google.com',	NULL,	'$2y$10$57O9/FJc/nsTw92y9v381OnlcptAzxpACzDaRk8S8HcLnMETmO8iO',	NULL,	NULL,	'2020-12-09 04:46:04',	'2022-09-08 11:50:48'),
 ('3',	'3',	'User',	'user',	'user@google.com',	NULL,	'$2y$10$lB5ZXTmaulKq/Pm1fZgAYulo2rzdmNw.b2BL3JVRvP3kPBx0rgI.S',	NULL,	NULL,	'2020-12-09 04:46:04',	'2022-09-08 11:51:00');
 
--- 2022-09-08 19:31:06
+-- 2022-09-08 20:25:25
